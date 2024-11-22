@@ -1,11 +1,318 @@
 <!DOCTYPE html>
-<html>
+<html class="smooth-scroll">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="../img/ilham/icon.png"
+      type="image/x-icon"
+    />
+
+    <title>Brew Space</title>
   </head>
   <body>
-    <h1 class="text-3xl font-bold text-blue-500">Hello world!</h1>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 border bg-primary-300 drop-shadow">
+      <nav
+        class="mx-auto flex w-11/12 items-center justify-between py-4 md:container"
+      >
+        <!-- Logo -->
+        <div>
+          <a
+            href=""
+            class="nav-link responsive-header text-3xl text-primary-100"
+            >Brew Space</a
+          >
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-primary-100 focus:outline-none">
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:block">
+          <ul class="flex items-center justify-between gap-5">
+            <li>
+              <a href="#services" class="nav-link text-lg">Services</a>
+            </li>
+            <li>
+              <a href="#product" class="nav-link text-lg">Product</a>
+            </li>
+            <li>
+              <a href="#testimonial" class="nav-link text-lg">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden px-4 md:hidden">
+        <ul
+          class="flex flex-col items-end justify-center gap-5 bg-primary-300 py-4"
+        >
+          <li>
+            <a href="#services" class="nav-link text-lg">Services</a>
+          </li>
+          <li>
+            <a href="#product" class="nav-link text-lg">Product</a>
+          </li>
+          <li>
+            <a href="#testimonial" class="nav-link text-lg">Testimonial</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- hero -->
+    <section
+      id="hero"
+      class="relative flex h-screen items-center bg-cover bg-fixed bg-center bg-no-repeat bg-blend-darken"
+      style="background-image: url(../img/ilham/hero.jpg)"
+    >
+      <div class="absolute inset-0 z-0 bg-black bg-opacity-80"></div>
+      <div class="container relative z-10 mx-auto px-4 text-center text-white">
+        <div class="mx-auto">
+          <h3
+            id="fade-in-header"
+            class="responsive-header mb-5 text-center text-5xl font-medium opacity-0 transition-opacity duration-500"
+          >
+            Brewing Moments,<br />Crafting Story
+          </h3>
+          <p
+            class="text-paragraph responsive-paragraph text-gray-300 transition-opacity duration-500"
+          >
+            source the finest coffee beans and transform them into extraordinary
+            cups of coffee that inspire and delight
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="section bg-bg-200">
+      <div class="container">
+        <!-- title -->
+        <div class="mb-10 text-center">
+          <h3 class="responsive-header mb-5 text-5xl font-medium">
+            Our Approach
+          </h3>
+          <p class="responsive-paragraph">
+            Passionate about more than just coffee - we're dedicated to creating
+            exceptional experiences that connect people and stories.
+          </p>
+        </div>
+
+        <!-- services container -->
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+          <!-- service items -->
+          <div class="card-service" id="service-1">
+            <img src="../img/ilham/about (1).png" alt="" class="mb-4 w-1/4" />
+            <div class="flex flex-col justify-around">
+              <h4
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
+              >
+                Precision in Every Roast
+              </h4>
+              <p class="text-center md:text-left">
+                Carefully selected and roasted beans, crafting unique flavor
+                profiles with artistic precision.
+              </p>
+            </div>
+          </div>
+          <!-- service items -->
+          <div class="card-service" id="service-2">
+            <img src="../img/ilham/about (2).png" alt="" class="mb-4 w-1/4" />
+            <div class="flex flex-col justify-around">
+              <h4
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
+              >
+                Precision in Every Roast
+              </h4>
+              <p class="text-center md:text-left">
+                Carefully selected and roasted beans, crafting unique flavor
+                profiles with artistic precision.
+              </p>
+            </div>
+          </div>
+          <!-- service items -->
+          <div class="card-service" id="service-3">
+            <img src="../img/ilham/about (3).png" alt="" class="mb-4 w-1/4" />
+            <div class="flex flex-col justify-around">
+              <h4
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
+              >
+                Precision in Every Roast
+              </h4>
+              <p class="text-center md:text-left">
+                Carefully selected and roasted beans, crafting unique flavor
+                profiles with artistic precision.
+              </p>
+            </div>
+          </div>
+          <!-- service items -->
+          <div class="card-service" id="service-4">
+            <img src="../img/ilham/about (4).png" alt="" class="mb-4 w-1/4" />
+            <div class="flex flex-col justify-around">
+              <h4
+                class="responsive-header text-2lg text-center font-semibold md:text-left"
+              >
+                Precision in Every Roast
+              </h4>
+              <p class="text-center md:text-left">
+                Carefully selected and roasted beans, crafting unique flavor
+                profiles with artistic precision.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- product -->
+    <section id="product" class="section bg-primary-300">
+      <div class="container">
+        <!-- title -->
+        <div class="mb-10 text-center">
+          <h3 class="responsive-header mb-5 text-5xl font-medium">
+            Our Specialty
+          </h3>
+          <p class="responsive-paragraph">
+            Each cup is crafted from the finest beans and brewed with care.
+            Discover unique flavors that will delight your palate and create
+            memorable moments.
+          </p>
+        </div>
+
+        <!-- product -->
+        <div class="flex flex-wrap justify-between gap-4">
+          <!-- product items -->
+          <div class="card-product">
+            <img src="../img/ilham/product (4).png" alt="" />
+            <div class="p-5">
+              <h4 class="text-center sm:text-xl md:text-2xl">Espresso</h4>
+            </div>
+          </div>
+          <!-- product items -->
+          <div class="card-product">
+            <img src="../img/ilham/product (3).png" alt="" />
+            <div class="p-5">
+              <h4 class="text-center sm:text-xl md:text-2xl">Cappuccino</h4>
+            </div>
+          </div>
+          <!-- product items -->
+          <div class="card-product">
+            <img src="../img/ilham/product (2).png" alt="" />
+            <div class="p-5">
+              <h4 class="text-center sm:text-xl md:text-2xl">Latte</h4>
+            </div>
+          </div>
+          <!-- product items -->
+          <div class="card-product">
+            <img src="../img/ilham/product (1).png" alt="" />
+            <div class="p-5">
+              <h4 class="text-center sm:text-xl md:text-2xl">Mocha</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial -->
+    <section id="testimonial" class="section bg-bg-200">
+      <div class="container">
+        <!-- title -->
+        <div class="mb-10 text-center">
+          <h3 class="responsive-header mb-5 text-5xl font-medium">
+            Testimonials & Feedback
+          </h3>
+        </div>
+
+        <div class="flex flex-col justify-between gap-4 md:flex-row">
+          <!-- Testimonial Section -->
+          <div class="md:w-1/2">
+            <h3 class="mb-4 text-center text-xl font-semibold">
+              What Our Customers Say
+            </h3>
+            <div class="grid grid-cols-1 gap-6">
+              <!-- Testimonial Card 1 -->
+              <div class="card-testimony">
+                <p class="mb-2 text-text-100">
+                  "This service has changed my life! The team is incredibly
+                  supportive and the results are amazing."
+                </p>
+                <p class="font-medium italic text-text-100">- John Doe</p>
+              </div>
+              <!-- Testimonial Card 2 -->
+              <div class="card-testimony">
+                <p class="mb-2 text-gray-700">
+                  "I can't believe how easy it was to get started. Highly
+                  recommend to everyone!"
+                </p>
+                <p class="italic text-gray-500">- Jane Smith</p>
+              </div>
+              <!-- Testimonial Card 3 -->
+              <div class="card-testimony">
+                <p class="mb-2 text-gray-700">
+                  "Fantastic experience! The customer service is top-notch."
+                </p>
+                <p class="italic text-gray-500">- Michael Johnson</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback Section -->
+          <div class="rounded-lg bg-primary-300 p-6 shadow-lg md:w-1/2">
+            <h3 class="mb-4 text-center text-xl font-semibold">
+              Your Feedback Matters
+            </h3>
+            <form>
+              <div class="mb-4">
+                <input
+                  type="text"
+                  placeholder="Your name"
+                  class="focus:shadow-outline mb-4 w-full appearance-none rounded border border-[#786459] bg-white px-3 py-2 leading-tight text-gray-700 shadow focus:border-[#786459] focus:outline-none"
+                  required
+                />
+                <textarea
+                  class="focus:shadow-outline w-full appearance-none rounded border border-[#786459] bg-white px-3 py-2 leading-tight text-gray-700 shadow focus:border-[#786459] focus:outline-none"
+                  id="feedback"
+                  rows="10"
+                  placeholder="Share your thoughts..."
+                  required
+                ></textarea>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="focus:shadow-outline rounded bg-accent-200 px-4 py-2 text-white hover:bg-primary-200 focus:outline-none"
+                  type="submit"
+                >
+                  Submit Feedback
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="ilham.js"></script>
   </body>
 </html>
