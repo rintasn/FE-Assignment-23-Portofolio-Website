@@ -1,13 +1,61 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <title>Mini Course Landing Page</title>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6">
+    <div class="container mx-auto">
+      <h1 class="text-4xl font-bold">Mini Course</h1>
+      <p class="mt-2">Belajar dengan cara yang menyenangkan dan interaktif!</p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container mx-auto my-10">
+    <section class="text-center">
+      <h2 class="text-3xl font-semibold">Mengapa Bergabung?</h2>
+      <p class="mt-4">Dapatkan pengetahuan baru dan keterampilan praktis dalam waktu singkat.</p>
+    </section>
+
+    <!-- Features -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+      <div class="card bg-white shadow-lg p-5">
+        <img src="https://logique.s3.ap-southeast-1.amazonaws.com/2024/03/apa-itu-programming.webp" alt="Apa itu Programming" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">Materi Berkualitas</h3>
+        <p class="mt-2">Materi yang disusun oleh para ahli di bidangnya.</p>
+      </div>
+      <div class="card bg-white shadow-lg p-5">
+        <img src="https://www.mooc.org/hubfs/applications-of-computer-programming.jpg" alt="Aplikasi Programming" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">Akses 24/7</h3>
+        <p class="mt-2">Belajar kapan saja dan di mana saja.</p>
+      </div>
+      <div class="card bg-white shadow-lg p-5">
+        <img src="https://www.shutterstock.com/image-photo/web-developing-programming-language-website-260nw-2142401221.jpg" alt="Web Development" class="w-full h-48 object-cover rounded-t-lg">
+        <h3 class="text-xl font-bold mt-4">Sertifikat</h3>
+        <p class="mt-2">Dapatkan sertifikat setelah menyelesaikan kursus.</p>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="text-center mt-10">
+      <h2 class="text-3xl font-semibold">Siap untuk Memulai?</h2>
+      <p class="mt-4">Daftar sekarang dan dapatkan diskon 20% untuk pendaftaran awal!</p>
+      <a href="#" class="btn btn-primary mt-4">Daftar Sekarang</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white p-6 mt-10">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Mini Course. All rights reserved.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
